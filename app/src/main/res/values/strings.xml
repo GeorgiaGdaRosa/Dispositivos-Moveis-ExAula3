@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ExAula3</string>
+    <string name="btn1">Exercicio1</string>
+    <string name="btn2">Exercicio2</string>
+    <string name="btn3">Exercicio3</string>
+    <string name="btn4">Exercicio4</string>
+    <string name="questoes">Questão 11 de 28</string>
+    <string name="pergunta">Q11: Qual é o significado desta placa?</string>
+    <string name="resposta1">Ponta a Frente</string>
+    <string name="resposta2">Estreitamento na Pista</string>
+    <string name="resposta3">Declive Acentuado</string>
+    <string name="resposta4">Redução de Largura do Veículos</string>
+    <string name="proxima_pergunta">Próxima Pergunta </string>
+    <string name="valor_inicial">Valor inicial</string>
+    <string name="poupanca">Poupança</string>
+    <string name="logo_poupanca">Logo Poupança</string>
+    <string name="valor_ex">Valor em R$ Ex: 1700.00</string>
+    <string name="aplicacao">Aplicação Mensal</string>
+    <string name="aplicacao_ex">Ex: 100.00</string>
+    <string name="tempo">Tempo da aplicacao:</string>
+    <string name="meses">Em meses</string>
+    <string name="taxa">Taxa</string>
+    <string name="taxa_ex">Ex: 0.02</string>
+    <string name="calcular">Calcular</string>
+    <string name="consumo_total">Consumo Total R$:</string>
+    <string name="couvert">Couvert artístico R$:</string>
+    <string name="dividir">Dividir conta por:</string>
+    <string name="btn_calcular">Calcular conta final</string>
+    <string name="taxa_servico">Taxa de Serviço(10%) R$:</string>
+    <string name="conta_total">Conta Total R$:</string>
+    <string name="valor_pessoa">Valor por pessoa R$:</string>
+</resources>
