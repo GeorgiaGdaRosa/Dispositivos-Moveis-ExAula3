@@ -4,6 +4,7 @@
     <string name="btn2">Exercicio2</string>
     <string name="btn3">Exercicio3</string>
     <string name="btn4">Exercicio4</string>
+    <string name="btn5">Aula 4</string>
     <string name="questoes">Questão 11 de 28</string>
     <string name="pergunta">Q11: Qual é o significado desta placa?</string>
     <string name="resposta1">Ponta a Frente</string>
@@ -29,4 +30,6 @@
     <string name="taxa_servico">Taxa de Serviço(10%) R$:</string>
     <string name="conta_total">Conta Total R$:</string>
     <string name="valor_pessoa">Valor por pessoa R$:</string>
+    <string name="listas">Listas</string>
+    <string name="nome">Nome:</string>
 </resources>
