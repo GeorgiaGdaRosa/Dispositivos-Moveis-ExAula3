@@ -27,6 +27,7 @@ public class ListActivity extends AppCompatActivity {
                 android.R.layout.simple_list_item_1, nomes);
         listView.setAdapter(adapter);
 
+
         listView.setOnItemClickListener((adapterView, view, position, id) -> {
             String nomeSelecionado = nomes[position];
             Intent intent = new Intent(ListActivity.this, DetalhesActivity.class);

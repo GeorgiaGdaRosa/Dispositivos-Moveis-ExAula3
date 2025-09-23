@@ -42,6 +42,18 @@
         android:text="@string/btn5"
         />
 
+    <Button
+        android:id="@+id/buttonAula5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_aula5"/>
+
+    <Button
+        android:id="@+id/buttonAula5Ex2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_aula5Ex2"/>
+
 
 
 </LinearLayout>

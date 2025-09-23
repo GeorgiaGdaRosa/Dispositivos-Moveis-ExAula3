@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExAula3">
         <activity
+            android:name=".Aula5Ex2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Aula5Activity"
+            android:exported="false" />
+        <activity
             android:name=".DetalhesActivity"
             android:exported="false" />
         <activity
