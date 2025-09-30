@@ -1,64 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    tools:context=".Aula6Activity">
 
-    <Button
-        android:id="@+id/buttonEx1"
+    <EditText
+        android:id="@+id/txtCEP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn1" />
-
-    <Button
-        android:id="@+id/buttonEx2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn2"
+        android:hint="@string/cep"
         />
 
     <Button
-        android:id="@+id/buttonEx3"
+        android:id="@+id/buscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn3"
+        android:text="@string/buscar"
+        android:onClick="onClickBuscar"
+        />
+
+    <EditText
+        android:id="@+id/txtLogradouro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/logradouro"
+        />
+
+    <EditText
+        android:id="@+id/txtComplemento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/complemento"
+        />
+
+    <EditText
+        android:id="@+id/txtBairro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bairro"
+        />
+
+    <EditText
+        android:id="@+id/txtLocalidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/localidade"
+        />
+
+    <EditText
+        android:id="@+id/txtUf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/uf"
         />
 
     <Button
-        android:id="@+id/buttonEx4"
+        android:id="@+id/btnAula6Ex2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btn4"
-        />
-
-    <Button
-        android:id="@+id/buttonAula4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn5"
-        />
-
-    <Button
-        android:id="@+id/buttonAula5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_aula5"/>
-
-    <Button
-        android:id="@+id/buttonAula5Ex2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_aula5Ex2"/>
-
-    <Button
-        android:id="@+id/buttonAula6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_aula6"/>
+        android:text="@string/exercicio2"/>
 
 
 

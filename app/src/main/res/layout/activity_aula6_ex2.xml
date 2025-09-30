@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aula6Ex2Activity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mediaTemp"/>
+
+            <EditText
+                android:id="@+id/mediaTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Média da Temperatura"/>
+
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mediaUmid"/>
+
+        <EditText
+            android:id="@+id/mediaUmid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Média da Umidade"/>
+
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mediaPntOrvalho"/>
+
+            <EditText
+                android:id="@+id/mediaOrvalho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Média de Ponto de Orvalho"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mediaPressao"/>
+
+            <EditText
+                android:id="@+id/mediaPressao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Média de Pressão"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informações Gerais:"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ListView
+        android:id="@+id/weatherInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+  
+
+</LinearLayout>
