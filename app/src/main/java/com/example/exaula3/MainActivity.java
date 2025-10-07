@@ -96,5 +96,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button buttonAula7 = findViewById(R.id.buttonAula7);
+        buttonAula7.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, Aula7Activity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

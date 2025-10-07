@@ -60,6 +60,10 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_aula6"/>
 
-
+    <Button
+        android:id="@+id/buttonAula7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn7"/>
 
 </LinearLayout>
