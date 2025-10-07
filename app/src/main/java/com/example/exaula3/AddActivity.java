@@ -3,63 +3,47 @@ package com.example.exaula3;
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.example.exaula3.models.DatabaseHelper;
 
 public class AddActivity extends AppCompatActivity {
 
+    private EditText txtModelo, txtAno, txtValor;
+    private Button btnSalvar;
     private DatabaseHelper helper;
-    private EditText modelo, valor, ano;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_add);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        modelo = (EditText) findViewById(R.id.editTextModelo);
-        valor = (EditText) findViewById(R.id.editTextValor);
-        ano = (EditText) findViewById(R.id.editTextAno);
-
+        txtModelo = findViewById(R.id.txtModelo);
+        txtAno = findViewById(R.id.txtAno);
+        txtValor = findViewById(R.id.txtValor);
+        btnSalvar = findViewById(R.id.btnSalvar);
         helper = new DatabaseHelper(this);
+
+        btnSalvar.setOnClickListener(v -> salvarCarro());
     }
 
-    public void salvarCarro(View view){
+    private void salvarCarro() {
         SQLiteDatabase db = helper.getWritableDatabase();
-
         ContentValues values = new ContentValues();
-        values.put("modelo", modelo.getText().toString());
-        values.put("ano", Integer.parseInt(ano.getText().toString()));
-        values.put("valor", Double.parseDouble(valor.getText().toString()));
+        values.put("modelo", txtModelo.getText().toString());
+        values.put("ano", Integer.parseInt(txtAno.getText().toString()));
+        values.put("valor", Double.parseDouble(txtValor.getText().toString()));
 
-        long resultado = db.insert("carro", null, values);
-        if(resultado != -1){
-            Toast.makeText(this, "Registro salvo com sucesso!", Toast.LENGTH_SHORT).show();
-            limpar();
+        long result = db.insert("carros", null, values);
+        if (result != -1) {
+            Toast.makeText(this, "Carro salvo!", Toast.LENGTH_SHORT).show();
+            finish();
         } else {
-            Toast.makeText(this, "Erro ao salvar!", Toast.LENGTH_SHORT).show();
-
+            Toast.makeText(this, "Erro ao salvar", Toast.LENGTH_SHORT).show();
         }
-
-    }
-
-    @Override
-    protected void onDestroy(){
-        helper.close();
-        super.onDestroy();
+        db.close();
     }
 }

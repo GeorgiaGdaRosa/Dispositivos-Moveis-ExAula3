@@ -1,90 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Aula7Activity">
+    android:orientation="vertical"
+    android:padding="16dp">
 
+    <TextView
+        android:text="Revenda de Carros"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/txtBusca"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="8dp">
+            android:layout_weight="1"
+            android:hint="Buscar modelo" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ano"
-                android:layout_marginEnd="16dp" />
-
-            <EditText
-                android:id="@+id/editTextAno"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:hint="Digite o ano"
-                android:inputType="number" />
-
-            <Button
-                android:id="@+id/btnAno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BUSCAR" />
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="8dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nome"
-                android:layout_marginEnd="8dp" />
-
-            <EditText
-                android:id="@+id/editTextNome"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:hint="Digite o nome" />
-
-            <Button
-                android:id="@+id/btnNome"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="BUSCAR" />
-        </LinearLayout>
-
-
-        <ListView
-            android:id="@+id/carros"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" />
+            android:text="Buscar" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/adicionar"
+        android:id="@+id/btnAdicionar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Adicionar"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp" />
+        android:text="Adicionar carro"
+        android:layout_marginTop="8dp"/>
 
-</FrameLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
